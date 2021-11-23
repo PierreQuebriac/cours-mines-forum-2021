@@ -1,3 +1,6 @@
+import { formatDistanceToNow } from "date-fns";
+import fr from "date-fns/locale/fr";
+
 interface Props {
   body: string;
   author: string;
@@ -20,7 +23,9 @@ const Messages = ({ body, author, date, self }: Props) => {
     <div className={classname}>
       <div className="card-body">
         <h5 className="card-title">{author}</h5>
-        <h6 className="card-subtitle mb-2 text-muted">{dateString(date)}</h6>
+        <h6 className="card-subtitle mb-2 text-muted">
+          {formatDistanceToNow(date, { addSuffix: true, locale: fr })}
+        </h6>
         <p className="card-text">{body}</p>
       </div>
     </div>
