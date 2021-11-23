@@ -1,4 +1,4 @@
-body #main-content div.box > a,
+/* body #main-content div.box > a,
 a.special {
   font-size: 18px;
   font-weight: bold;
@@ -12,6 +12,23 @@ body #main-content {
   position: relative;
 }
 
+body #main-content label {
+  color: rgb(0, 0, 255);
+}
+
+body #main-content input[type="text"] {
+  font-size: 30px;
+}
+#mail_adress {
+  position: relative;
+}
+body #mail_adress > p {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  color: rgb(255, 0, 0);
+}
+
 body #main-content div.box > a,
 a.special {
   position: absolute;
@@ -20,5 +37,32 @@ a.special {
   width: 100px;
   height: 100px;
 
-  display: block; /*hidden, inline, ...*/
+  display: block; 
+} */
+
+#forum-wrapper {
+  height: 100vh;
+  background-color: rgba(159, 171, 255, 0.582);
+}
+
+#new-message-container {
+  background-color: rgba(194, 194, 194, 0.678);
+}
+#message-container {
+  overflow: auto;
+}
+.moi {
+  align-self: flex-end;
+}
+#titre {
+  align-self: center;
+}
+.card-text {
+  font-size: small;
+}
+.card-subtitle {
+  font-size: smaller;
+}
+.card-text {
+  font-size: large;
 }
